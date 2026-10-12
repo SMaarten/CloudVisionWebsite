@@ -150,13 +150,13 @@ const translations = {
 };
 
 const titleTranslations = {
-  fr: { "CloudVision": "CloudVision", "CloudVision | Warm": "CloudVision | Version chaleureuse" },
-  en: { "CloudVision": "CloudVision", "CloudVision | Warm": "CloudVision | Warm" }
+  fr: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative" },
+  en: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative" }
 };
 
 const descriptionTranslations = {
-  fr: "CloudVision : consultant indépendant pour Microsoft 365, Azure et les environnements sur site. Plus de 14 ans d’expérience. Une présentation chaleureuse et apaisante.",
-  en: "CloudVision: freelance consultant for Microsoft 365, Azure, and on-premises environments. 14+ years of experience. A warm, calm design."
+  fr: "CloudVision : consultant indépendant pour Microsoft 365, Azure et les environnements sur site. Plus de 14 ans d’expérience.",
+  en: "CloudVision: freelance consultant for Microsoft 365, Azure, and on-premises environments. 14+ years of experience."
 };
 
 const attributeTranslations = {
