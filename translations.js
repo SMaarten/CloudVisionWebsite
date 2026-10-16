@@ -1,6 +1,9 @@
 const translations = {
   nl: {},
   fr: {
+    "U maakt een account aan en rolt de app met leesrechten uit naar uw Microsoft 365-tenant(s).": "Vous créez un compte et déployez l'application en lecture seule vers votre ou vos tenants Microsoft 365.",
+    "Wat leest het assessment?": "Que lit l'évaluation ?",
+    "Privacyverklaring": "Confidentialité",
     "Nieuw": "Nouveau",
     "M365-assessment voor NIS2, ISO 27001 en de AI-verordening →": "Évaluation M365 pour NIS2, l'ISO 27001 et le règlement sur l'IA →",
     "M365-assessment": "Évaluation M365",
@@ -95,6 +98,9 @@ const translations = {
     "Microsoft 365 · Azure · On-premise": "Microsoft 365 · Azure · Sur site"
   },
   en: {
+    "U maakt een account aan en rolt de app met leesrechten uit naar uw Microsoft 365-tenant(s).": "You create an account and deploy the read-only app to your Microsoft 365 tenant(s).",
+    "Wat leest het assessment?": "What does the assessment read?",
+    "Privacyverklaring": "Privacy policy",
     "Nieuw": "New",
     "M365-assessment voor NIS2, ISO 27001 en de AI-verordening →": "M365 assessment for NIS2, ISO 27001 and the AI Act →",
     "M365-assessment": "M365 assessment",
