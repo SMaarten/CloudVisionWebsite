@@ -2,6 +2,8 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="CloudVision: freelance consultant voor Microsoft 365, Azure en on-premise omgevingen. 14+ jaar ervaring.">
 <title>CloudVision</title>
@@ -473,18 +475,6 @@ Count Name
 </div>
 
 <script src="translations.js"></script>
-<script>
-// Open the assessment app in the language chosen on the site
-const appLinks = document.querySelectorAll("[data-app-link]");
-function syncAppLinks() {
-  appLinks.forEach((link) => {
-    const url = new URL(link.href);
-    url.searchParams.set("lang", languageSelect.value);
-    link.href = url.toString();
-  });
-}
-languageSelect.addEventListener("change", syncAppLinks);
-syncAppLinks();
-</script>
+<script src="app-links.js"></script>
 </body>
 </html>
