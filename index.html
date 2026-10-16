@@ -229,6 +229,20 @@ svg [stroke="#7FD8FF"]{stroke:var(--sand)!important}
 .preview .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
 .preview .tags span{font:600 11px/1 var(--mono);padding:7px 9px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
 @media (max-width:900px){.assess{grid-template-columns:1fr}}
+/* Pricing */
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.plan{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px}
+.plan.featured{border:2px solid var(--cobalt)}
+.plan h3{font:800 22px/1.1 var(--display)}
+.plan .price{font:800 30px/1.1 var(--display);margin-top:14px}
+.plan .per{font-size:14px;color:var(--ink-2);margin-top:4px}
+.plan ul{list-style:none;padding:0;margin:18px 0 22px;display:grid;gap:8px;font-size:15px;flex:1}
+.plan li{display:flex;gap:8px}
+.plan li::before{content:"✓";color:var(--mint);font-weight:700}
+.plan .btn{align-self:flex-start}
+.plans-note{margin-top:22px;font-size:15px;color:var(--ink-2)}
+@media (max-width:1000px){.plans{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.plans{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -244,6 +258,7 @@ svg [stroke="#7FD8FF"]{stroke:var(--sand)!important}
     <a href="#aanpak">Aanpak</a>
     <a href="#over">Over mij</a>
     <a href="#assessment">M365-assessment</a>
+    <a href="#prijzen">Prijzen</a>
   </div>
   <label class="language-picker"><span id="language-label" class="sr-only">Taal</span><select id="language-select" aria-labelledby="language-label"><option value="nl" selected>NL</option><option value="fr">FR</option><option value="en">EN</option></select></label>
   <a class="btn btn-main" href="#contact">Contact</a>
@@ -354,10 +369,10 @@ svg [stroke="#7FD8FF"]{stroke:var(--sand)!important}
         <li>Enkel leesrechten. U verwijdert de app op elk moment met één klik.</li>
       </ul>
       <div class="cta">
-        <a class="btn btn-sun" href="https://m365assessment.cloudvision.be/signup" data-app-link>Start uw assessment →</a>
+        <a class="btn btn-sun" href="https://m365assessment.cloudvision.be/request-access" data-app-link>Vraag toegang aan →</a>
         <a class="btn btn-ghost" href="https://m365assessment.cloudvision.be/demo" data-app-link>Bekijk de demo</a>
       </div>
-      <p class="note">U maakt een account aan en rolt de app met leesrechten uit naar uw Microsoft 365-tenant(s). <a href="/permissions.html" data-app-link style="color:#fff">Wat leest het assessment?</a></p>
+      <p class="note">Na een kort gesprek maken we uw account aan. Daarna rolt u de app met leesrechten uit naar uw Microsoft 365-tenant(s). <a href="/permissions.html" data-app-link style="color:#fff">Wat leest het assessment?</a></p>
     </div>
     <div class="preview" aria-label="Voorbeeld van een assessmentrapport">
       <div class="top">
@@ -374,6 +389,36 @@ svg [stroke="#7FD8FF"]{stroke:var(--sand)!important}
       <div class="tags"><span>NIS2</span><span>ISO/IEC 27001</span><span>EU AI Act</span></div>
     </div>
   </div>
+</section>
+
+<section id="prijzen">
+  <div class="head">
+    <div><p class="eyebrow">Prijzen</p><h2>Kies de formule die past.</h2></div>
+    <p>Elke formule bevat alle controles en kaders. U betaalt per factuur; er is geen automatische betaling.</p>
+  </div>
+  <div class="plans">
+    <article class="plan">
+      <h3>Trial</h3><p class="price">Gratis</p><p class="per">30 dagen</p>
+      <ul><li>1 tenant</li><li>1 assessment</li><li>Managementsamenvatting</li></ul>
+      <a class="btn btn-ghost" href="https://m365assessment.cloudvision.be/request-access?plan=trial" data-app-link>Vraag een trial aan</a>
+    </article>
+    <article class="plan">
+      <h3>Essential</h3><p class="price">€250</p><p class="per">per maand · maandelijks opzegbaar</p>
+      <ul><li>1 tenant</li><li>1 assessment per maand</li><li>Managementsamenvatting en volledig rapport</li></ul>
+      <a class="btn btn-ghost" href="https://m365assessment.cloudvision.be/request-access?plan=essential" data-app-link>Kies Essential</a>
+    </article>
+    <article class="plan featured">
+      <h3>Professional</h3><p class="price">€2.500</p><p class="per">per jaar</p>
+      <ul><li>Tot 3 tenants</li><li>Onbeperkt assessments</li><li>Rapporten met herstelstappen</li></ul>
+      <a class="btn btn-main" href="https://m365assessment.cloudvision.be/request-access?plan=pro" data-app-link>Kies Professional</a>
+    </article>
+    <article class="plan">
+      <h3>Partner (MSP)</h3><p class="price">Op offerte</p><p class="per">per jaar</p>
+      <ul><li>Onbeperkt tenants</li><li>Onbeperkt assessments</li><li>Uw eigen logo op de rapporten</li></ul>
+      <a class="btn btn-ghost" href="https://m365assessment.cloudvision.be/request-access?plan=msp" data-app-link>Vraag een offerte</a>
+    </article>
+  </div>
+  <p class="plans-note">Onderwijs of andere noden? <a href="#contact">Contacteer ons</a> voor een prijs op maat. Prijzen exclusief btw. <a href="/terms.html" data-app-link>Algemene voorwaarden</a></p>
 </section>
 
 <section id="specialisaties">
@@ -470,7 +515,7 @@ Count Name
 
 <footer>
   <span>© 2026 CloudVision Consult BV · BE1011.470.072</span>
-  <span><a href="/privacy.html" data-app-link>Privacyverklaring</a> · <a href="/permissions.html" data-app-link>Wat leest het assessment?</a></span>
+  <span><a href="/privacy.html" data-app-link>Privacyverklaring</a> · <a href="/terms.html" data-app-link>Algemene voorwaarden</a> · <a href="/permissions.html" data-app-link>Wat leest het assessment?</a></span>
 </footer>
 </div>
 
