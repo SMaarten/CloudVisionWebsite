@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wat het assessment leest · CloudVision</title>
+<meta name="description" content="The read-only Microsoft 365 permissions used by the CloudVision M365 Assessment, and what each is used for.">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/legal.css">
+</head>
+<body data-titles='{"nl":"Wat het assessment leest · CloudVision","fr":"Ce que lit l\u2019évaluation · CloudVision","en":"What the assessment reads · CloudVision"}'>
+<div class="wrap">
+<nav>
+  <a class="logo" href="/" aria-label="CloudVision">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#527A9B"/><path d="M10 22h14a4.5 4.5 0 0 0-.8-8.9A6 6 0 0 0 11.6 15 3.6 3.6 0 0 0 10 22Z" fill="#fff"/><circle cx="17" cy="18" r="2.4" fill="#DDBB67"/></svg>
+    CloudVision
+  </a>
+  <div class="lang" role="group" aria-label="Language"><button data-set="nl">NL</button><button data-set="fr">FR</button><button data-set="en">EN</button></div>
+</nav>
+<article data-lang="en">
+<p class="eyebrow">M365 Assessment</p>
+<h1>What the assessment reads</h1>
+<p class="updated">Last updated: 16 October 2026</p>
+<p>When a Global Administrator deploys the CloudVision M365 Assessment app to a Microsoft 365 tenant, Microsoft asks to approve the permissions below. They are all <strong>read-only</strong>. The app never reads the content of e-mails, files, chats, meetings or calendars, and it cannot change anything in your tenant.</p>
+<h2>Permissions approved when the app is deployed</h2>
+<div class="card"><table>
+<tr><th>Permission</th><th>Type</th><th>What it is used for</th></tr>
+<tr><td><code>Organization.Read.All</code></td><td><span class="tag">Read</span></td><td>Tenant name, verified domains, subscriptions and licences – to know whether you have Business Premium, E3 or E5.</td></tr>
+<tr><td><code>Directory.Read.All</code></td><td><span class="tag">Read</span></td><td>Users, groups, guests and domain settings – e.g. inactive accounts and password expiry.</td></tr>
+<tr><td><code>Policy.Read.All</code></td><td><span class="tag">Read</span></td><td>Conditional Access, Security Defaults and the authorisation policy (user consent, guest access).</td></tr>
+<tr><td><code>Reports.Read.All</code></td><td><span class="tag">Read</span></td><td>The MFA registration report: who has registered an authentication method.</td></tr>
+<tr><td><code>UserAuthenticationMethod.Read.All</code></td><td><span class="tag">Read</span></td><td>MFA registration details per user, used together with the report above.</td></tr>
+<tr><td><code>AuditLog.Read.All</code></td><td><span class="tag">Read</span></td><td>Last sign-in date per account and whether sign-in logs are available.</td></tr>
+<tr><td><code>RoleManagement.Read.Directory</code></td><td><span class="tag">Read</span></td><td>Who holds administrator roles such as Global Administrator.</td></tr>
+<tr><td><code>RoleEligibilitySchedule.Read.Directory</code></td><td><span class="tag">Read</span></td><td>Privileged Identity Management: which admin roles are eligible instead of permanent.</td></tr>
+<tr><td><code>IdentityRiskyUser.Read.All</code></td><td><span class="tag">Read</span></td><td>Users flagged as risky by Identity Protection.</td></tr>
+<tr><td><code>SecurityEvents.Read.All</code></td><td><span class="tag">Read</span></td><td>Your Microsoft Secure Score.</td></tr>
+<tr><td><code>SecurityAlert.Read.All</code></td><td><span class="tag">Read</span></td><td>Open Microsoft Defender alerts and their severity.</td></tr>
+<tr><td><code>AttackSimulation.Read.All</code></td><td><span class="tag">Read</span></td><td>Phishing simulation campaigns run in the last 12 months.</td></tr>
+<tr><td><code>DeviceManagementConfiguration.Read.All</code></td><td><span class="tag">Read</span></td><td>Intune compliance policies and compliance settings.</td></tr>
+<tr><td><code>DeviceManagementManagedDevices.Read.All</code></td><td><span class="tag">Read</span></td><td>Managed devices: compliance state and disk encryption (device names appear as evidence).</td></tr>
+<tr><td><code>DeviceManagementApps.Read.All</code></td><td><span class="tag">Read</span></td><td>App protection policies for mobile devices (for the device checks).</td></tr>
+<tr><td><code>InformationProtectionPolicy.Read.All</code></td><td><span class="tag">Read</span></td><td>Which sensitivity labels exist and are published.</td></tr>
+<tr><td><code>SensitivityLabels.Read.All</code></td><td><span class="tag">Read</span></td><td>Sensitivity labels defined in Purview (the app-only way to read them).</td></tr>
+<tr><td><code>RecordsManagement.Read.All</code></td><td><span class="tag">Read</span></td><td>Which retention labels are defined.</td></tr>
+<tr><td><code>SharePointTenantSettings.Read.All</code></td><td><span class="tag">Read</span></td><td>SharePoint and OneDrive sharing settings.</td></tr>
+<tr><td><code>Application.Read.All</code></td><td><span class="tag">Read</span></td><td>Enterprise applications and the permissions granted to them (third-party and AI apps), and the assessment app itself.</td></tr>
+<tr><td><code>User.Read</code></td><td><span class="tag">Sign-in</span></td><td>Only when you sign in with Microsoft: your name and e-mail address.</td></tr>
+<tr><td><code>Exchange.ManageAsApp</code></td><td><span class="tag">Optional</span></td><td>Only if you enable the optional PowerShell checks: read Exchange Online and Purview settings (DLP, audit log, forwarding, Safe Links). This also assigns the read-only Global Reader role to the app.</td></tr>
+</table></div>
+<h2>Asked only at the moment you need them</h2>
+<p>These permissions are <strong>not</strong> part of the deployment. Microsoft asks an administrator for them only when that person clicks the button, and they are used for that one action.</p>
+<div class="card"><table>
+<tr><th>Permission</th><th>When</th></tr>
+<tr><td><code>Application.ReadWrite.All</code><br><span class="tag write">One action</span></td><td>When you click <em>Remove app</em>: an administrator signs in so the app can delete itself from your tenant.</td></tr>
+<tr><td><code>RoleManagement.ReadWrite.Directory</code><br><span class="tag write">One action</span></td><td>When you click <em>Enable PowerShell checks</em>: an administrator signs in so the read-only Global Reader role can be assigned to the app.</td></tr>
+</table></div>
+<h2>Removing the app</h2>
+<p>Use <em>Remove app</em> on the tenant's dashboard, or delete the enterprise application <em>M365 Compliance Assessment</em> in the Entra admin centre. Either way, all of the app's access ends immediately; the portal then deletes the stored assessment data of that tenant.</p>
+<p class="note">More on how we handle data: <a href="/privacy.html" data-keep-lang>privacy policy</a>. Questions: <a href="mailto:info@cloudvision.be">info@cloudvision.be</a>.</p>
+</article>
+<article data-lang="nl">
+<p class="eyebrow">M365-assessment</p>
+<h1>Wat het assessment leest</h1>
+<p class="updated">Laatst bijgewerkt: 16 oktober 2026</p>
+<p>Wanneer een globale beheerder de app CloudVision M365 Assessment uitrolt naar een Microsoft 365-tenant, vraagt Microsoft om de rechten hieronder goed te keuren. Het zijn allemaal <strong>leesrechten</strong>. De app leest nooit de inhoud van e-mails, bestanden, chats, vergaderingen of agenda's, en kan niets wijzigen in uw tenant.</p>
+<h2>Rechten die u goedkeurt bij het uitrollen</h2>
+<div class="card"><table>
+<tr><th>Recht</th><th>Soort</th><th>Waarvoor het dient</th></tr>
+<tr><td><code>Organization.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Naam, geverifieerde domeinen, abonnementen en licenties van de tenant – om te weten of u Business Premium, E3 of E5 hebt.</td></tr>
+<tr><td><code>Directory.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Gebruikers, groepen, gasten en domeininstellingen – bv. inactieve accounts en het verlopen van wachtwoorden.</td></tr>
+<tr><td><code>Policy.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Conditional Access, Security Defaults en het autorisatiebeleid (toestemming door gebruikers, gasttoegang).</td></tr>
+<tr><td><code>Reports.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Het rapport over MFA-registratie: wie een verificatiemethode registreerde.</td></tr>
+<tr><td><code>UserAuthenticationMethod.Read.All</code></td><td><span class="tag">Lezen</span></td><td>MFA-registratie per gebruiker, samen met het rapport hierboven.</td></tr>
+<tr><td><code>AuditLog.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Datum van laatste aanmelding per account en of aanmeldlogs beschikbaar zijn.</td></tr>
+<tr><td><code>RoleManagement.Read.Directory</code></td><td><span class="tag">Lezen</span></td><td>Wie beheerdersrollen zoals Global Administrator heeft.</td></tr>
+<tr><td><code>RoleEligibilitySchedule.Read.Directory</code></td><td><span class="tag">Lezen</span></td><td>Privileged Identity Management: welke beheerdersrollen eligible zijn in plaats van permanent.</td></tr>
+<tr><td><code>IdentityRiskyUser.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Gebruikers die Identity Protection als risicovol markeert.</td></tr>
+<tr><td><code>SecurityEvents.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Uw Microsoft Secure Score.</td></tr>
+<tr><td><code>SecurityAlert.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Openstaande Microsoft Defender-waarschuwingen en hun ernst.</td></tr>
+<tr><td><code>AttackSimulation.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Phishingsimulaties van de afgelopen 12 maanden.</td></tr>
+<tr><td><code>DeviceManagementConfiguration.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Compliancebeleid en compliance-instellingen in Intune.</td></tr>
+<tr><td><code>DeviceManagementManagedDevices.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Beheerde toestellen: compliancestatus en schijfversleuteling (toestelnamen verschijnen als bewijs).</td></tr>
+<tr><td><code>DeviceManagementApps.Read.All</code></td><td><span class="tag">Lezen</span></td><td>App protection policies voor mobiele toestellen (voor de controles op toestellen).</td></tr>
+<tr><td><code>InformationProtectionPolicy.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Welke gevoeligheidslabels bestaan en gepubliceerd zijn.</td></tr>
+<tr><td><code>SensitivityLabels.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Gevoeligheidslabels die in Purview gedefinieerd zijn (de manier om ze als app te lezen).</td></tr>
+<tr><td><code>RecordsManagement.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Welke bewaarlabels gedefinieerd zijn.</td></tr>
+<tr><td><code>SharePointTenantSettings.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Instellingen voor delen in SharePoint en OneDrive.</td></tr>
+<tr><td><code>Application.Read.All</code></td><td><span class="tag">Lezen</span></td><td>Enterprise applications en de rechten die ze kregen (apps van derden en AI-apps), en de assessment-app zelf.</td></tr>
+<tr><td><code>User.Read</code></td><td><span class="tag">Aanmelden</span></td><td>Enkel wanneer u aanmeldt met Microsoft: uw naam en e-mailadres.</td></tr>
+<tr><td><code>Exchange.ManageAsApp</code></td><td><span class="tag">Optioneel</span></td><td>Enkel als u de optionele PowerShell-controles inschakelt: instellingen van Exchange Online en Purview lezen (DLP, auditlog, doorsturen, Safe Links). Daarbij krijgt de app ook de alleen-lezen rol Global Reader.</td></tr>
+</table></div>
+<h2>Enkel gevraagd op het moment dat u ze nodig hebt</h2>
+<p>Deze rechten maken <strong>geen</strong> deel uit van het uitrollen. Microsoft vraagt ze aan een beheerder pas wanneer die op de knop klikt, en ze dienen enkel voor die ene actie.</p>
+<div class="card"><table>
+<tr><th>Recht</th><th>Wanneer</th></tr>
+<tr><td><code>Application.ReadWrite.All</code><br><span class="tag write">Eén actie</span></td><td>Wanneer u op <em>App verwijderen</em> klikt: een beheerder meldt zich aan zodat de app zichzelf uit uw tenant kan verwijderen.</td></tr>
+<tr><td><code>RoleManagement.ReadWrite.Directory</code><br><span class="tag write">Eén actie</span></td><td>Wanneer u op <em>PowerShell-controles inschakelen</em> klikt: een beheerder meldt zich aan zodat de alleen-lezen rol Global Reader aan de app kan worden toegekend.</td></tr>
+</table></div>
+<h2>De app verwijderen</h2>
+<p>Gebruik <em>App verwijderen</em> op het dashboard van de tenant, of verwijder de enterprise application <em>M365 Compliance Assessment</em> in het Entra-beheercentrum. In beide gevallen stopt alle toegang van de app onmiddellijk; het portaal wist daarna de bewaarde assessmentgegevens van die tenant.</p>
+<p class="note">Meer over hoe we met gegevens omgaan: <a href="/privacy.html" data-keep-lang>privacyverklaring</a>. Vragen: <a href="mailto:info@cloudvision.be">info@cloudvision.be</a>.</p>
+</article>
+<article data-lang="fr">
+<p class="eyebrow">Évaluation M365</p>
+<h1>Ce que lit l'évaluation</h1>
+<p class="updated">Dernière mise à jour : 16 octobre 2026</p>
+<p>Lorsqu'un administrateur général déploie l'application CloudVision M365 Assessment dans un tenant Microsoft 365, Microsoft demande d'approuver les autorisations ci-dessous. Elles sont toutes <strong>en lecture seule</strong>. L'application ne lit jamais le contenu des e-mails, fichiers, conversations, réunions ou calendriers, et ne peut rien modifier dans votre tenant.</p>
+<h2>Autorisations approuvées lors du déploiement</h2>
+<div class="card"><table>
+<tr><th>Autorisation</th><th>Type</th><th>Utilisation</th></tr>
+<tr><td><code>Organization.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Nom, domaines vérifiés, abonnements et licences du tenant – pour savoir si vous avez Business Premium, E3 ou E5.</td></tr>
+<tr><td><code>Directory.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Utilisateurs, groupes, invités et paramètres de domaine – par ex. comptes inactifs et expiration des mots de passe.</td></tr>
+<tr><td><code>Policy.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Conditional Access, Security Defaults et la stratégie d'autorisation (consentement des utilisateurs, accès invité).</td></tr>
+<tr><td><code>Reports.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Le rapport d'enregistrement MFA : qui a enregistré une méthode d'authentification.</td></tr>
+<tr><td><code>UserAuthenticationMethod.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Détails de l'enregistrement MFA par utilisateur, avec le rapport ci-dessus.</td></tr>
+<tr><td><code>AuditLog.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Date de dernière connexion par compte et disponibilité des journaux de connexion.</td></tr>
+<tr><td><code>RoleManagement.Read.Directory</code></td><td><span class="tag">Lecture</span></td><td>Qui détient des rôles d'administrateur comme Global Administrator.</td></tr>
+<tr><td><code>RoleEligibilitySchedule.Read.Directory</code></td><td><span class="tag">Lecture</span></td><td>Privileged Identity Management : quels rôles d'administrateur sont éligibles plutôt que permanents.</td></tr>
+<tr><td><code>IdentityRiskyUser.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Utilisateurs signalés comme à risque par Identity Protection.</td></tr>
+<tr><td><code>SecurityEvents.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Votre Microsoft Secure Score.</td></tr>
+<tr><td><code>SecurityAlert.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Alertes Microsoft Defender ouvertes et leur gravité.</td></tr>
+<tr><td><code>AttackSimulation.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Campagnes de simulation d'hameçonnage des 12 derniers mois.</td></tr>
+<tr><td><code>DeviceManagementConfiguration.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Stratégies et paramètres de conformité Intune.</td></tr>
+<tr><td><code>DeviceManagementManagedDevices.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Appareils gérés : état de conformité et chiffrement du disque (les noms d'appareils figurent comme preuves).</td></tr>
+<tr><td><code>DeviceManagementApps.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Stratégies de protection des applications mobiles (pour les contrôles des appareils).</td></tr>
+<tr><td><code>InformationProtectionPolicy.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Quelles étiquettes de confidentialité existent et sont publiées.</td></tr>
+<tr><td><code>SensitivityLabels.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Étiquettes de confidentialité définies dans Purview (la méthode de lecture pour une application).</td></tr>
+<tr><td><code>RecordsManagement.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Quelles étiquettes de rétention sont définies.</td></tr>
+<tr><td><code>SharePointTenantSettings.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Paramètres de partage SharePoint et OneDrive.</td></tr>
+<tr><td><code>Application.Read.All</code></td><td><span class="tag">Lecture</span></td><td>Applications d'entreprise et autorisations qui leur sont accordées (applications tierces et d'IA), ainsi que l'application d'évaluation elle-même.</td></tr>
+<tr><td><code>User.Read</code></td><td><span class="tag">Connexion</span></td><td>Uniquement lorsque vous vous connectez avec Microsoft : votre nom et votre adresse e-mail.</td></tr>
+<tr><td><code>Exchange.ManageAsApp</code></td><td><span class="tag">Facultatif</span></td><td>Uniquement si vous activez les contrôles PowerShell facultatifs : lire les paramètres d'Exchange Online et de Purview (DLP, journal d'audit, transfert, Safe Links). L'application reçoit alors aussi le rôle en lecture seule Global Reader.</td></tr>
+</table></div>
+<h2>Demandées uniquement au moment où vous en avez besoin</h2>
+<p>Ces autorisations ne font <strong>pas</strong> partie du déploiement. Microsoft les demande à un administrateur uniquement lorsqu'il clique sur le bouton, et elles ne servent qu'à cette action.</p>
+<div class="card"><table>
+<tr><th>Autorisation</th><th>Quand</th></tr>
+<tr><td><code>Application.ReadWrite.All</code><br><span class="tag write">Une action</span></td><td>Lorsque vous cliquez sur <em>Supprimer l'app</em> : un administrateur se connecte pour que l'application puisse se supprimer de votre tenant.</td></tr>
+<tr><td><code>RoleManagement.ReadWrite.Directory</code><br><span class="tag write">Une action</span></td><td>Lorsque vous cliquez sur <em>Activer les contrôles PowerShell</em> : un administrateur se connecte pour attribuer le rôle en lecture seule Global Reader à l'application.</td></tr>
+</table></div>
+<h2>Supprimer l'application</h2>
+<p>Utilisez <em>Supprimer l'app</em> sur le tableau de bord du tenant, ou supprimez l'application d'entreprise <em>M365 Compliance Assessment</em> dans le centre d'administration Entra. Dans les deux cas, tout accès de l'application cesse immédiatement ; le portail efface ensuite les données d'évaluation conservées pour ce tenant.</p>
+<p class="note">Plus d'informations sur le traitement des données : <a href="/privacy.html" data-keep-lang>politique de confidentialité</a>. Questions : <a href="mailto:info@cloudvision.be">info@cloudvision.be</a>.</p>
+</article>
+<footer>
+  <span>© 2026 CloudVision Consult BV · BE1011.470.072</span>
+  <span><a href="/">cloudvision.be</a> · <a href="/terms.html" data-keep-lang><span data-lang="nl">Algemene voorwaarden</span><span data-lang="fr">Conditions générales</span><span data-lang="en">Terms of service</span></a> · <a href="/privacy.html" data-keep-lang><span data-lang="nl">Privacyverklaring</span><span data-lang="fr">Confidentialité</span><span data-lang="en">Privacy policy</span></a></span>
+</footer>
+</div>
+<script src="/legal.js"></script>
+</body>
+</html>
