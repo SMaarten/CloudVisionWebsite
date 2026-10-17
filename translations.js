@@ -1,6 +1,76 @@
 const translations = {
   nl: {},
   fr: {
+    "Google-assessment": "Évaluation Google",
+    "Meer info": "Plus d'infos",
+    "Weet waar uw": "Sachez où en est votre",
+    "staat.": "aujourd'hui.",
+    "Een automatische doorlichting van uw tenant tegen NIS2, ISO/IEC 27001 en de EU AI-verordening, afgestemd op uw licenties en met concrete stappen om elk tekort op te lossen.": "Une analyse automatique de votre tenant selon NIS2, l'ISO/IEC 27001 et le règlement européen sur l'IA, adaptée à vos licences, avec des étapes concrètes pour corriger chaque lacune.",
+    "controles": "contrôles",
+    "categorieën": "catégories",
+    "kaders: NIS2, ISO/IEC 27001 en de AI-verordening": "cadres : NIS2, ISO/IEC 27001 et le règlement sur l'IA",
+    "Wat het controleert": "Ce qui est contrôlé",
+    "56 controles in 9 categorieën.": "56 contrôles en 9 catégories.",
+    "43 controles leest het portaal automatisch uit uw tenant. De 13 organisatorische maatregelen, zoals beleid en back-up, bevestigt u zelf in het portaal.": "Le portail lit automatiquement 43 contrôles dans votre tenant. Les 13 mesures organisationnelles, comme la politique et la sauvegarde, vous les confirmez vous-même dans le portail.",
+    "MFA, Conditional Access, beheerdersrollen, legacy-authenticatie, gasttoegang en inactieve accounts.": "MFA, Conditional Access, rôles d'administrateur, authentification héritée, accès invités et comptes inactifs.",
+    "Toestellen & endpoints": "Appareils et endpoints",
+    "Compliancepolicies in Intune, schijfversleuteling en toegang enkel vanaf beheerde toestellen.": "Stratégies de conformité Intune, chiffrement des disques et accès uniquement depuis des appareils gérés.",
+    "Bescherming tegen dreigingen": "Protection contre les menaces",
+    "Secure Score, openstaande waarschuwingen, phishingsimulaties, Safe Links en Safe Attachments.": "Secure Score, alertes ouvertes, simulations d'hameçonnage, Safe Links et Safe Attachments.",
+    "SPF, DKIM en DMARC, extern doorsturen, mailboxauditing en SMTP AUTH.": "SPF, DKIM et DMARC, transfert externe, audit des boîtes aux lettres et SMTP AUTH.",
+    "Samenwerken & delen": "Collaboration et partage",
+    "Extern delen in SharePoint en OneDrive, toegestane domeinen en synchronisatie.": "Partage externe dans SharePoint et OneDrive, domaines autorisés et synchronisation.",
+    "Gegevensbescherming": "Protection des données",
+    "Gevoeligheidslabels, bewaarbeleid en Data Loss Prevention.": "Étiquettes de confidentialité, stratégies de rétention et Data Loss Prevention.",
+    "Auditlog, aanmeldlogs, bewaartermijnen en opvolging in een SIEM.": "Journal d'audit, journaux de connexion, durées de conservation et suivi dans un SIEM.",
+    "Governance & weerbaarheid": "Gouvernance et résilience",
+    "Beleid, risicoanalyse, incidentrespons, back-up, continuïteit, leveranciers en bewustzijn.": "Politique, analyse des risques, réponse aux incidents, sauvegarde, continuité, fournisseurs et sensibilisation.",
+    "Copilot-uitrol, toegang van AI-apps tot bedrijfsgegevens, schaduw-AI, AI-geletterdheid en beleid.": "Déploiement de Copilot, accès des applications d'IA aux données, IA fantôme, maîtrise de l'IA et politique.",
+    "Kaders": "Cadres",
+    "Elke controle gekoppeld aan de regels.": "Chaque contrôle relié aux règles.",
+    "Het rapport toont per kader welke maatregelen in orde zijn en welke niet, met verwijzing naar het artikel of de control.": "Le rapport montre par cadre quelles mesures sont en ordre et lesquelles ne le sont pas, avec référence à l'article ou au contrôle.",
+    "NIS2-richtlijn": "Directive NIS2",
+    "De tien maatregelen voor cyberrisicobeheer en de meldplicht bij incidenten.": "Les dix mesures de gestion des risques cyber et l'obligation de notification des incidents.",
+    "33 controls uit Annex A die u in Microsoft 365 kunt aantonen.": "33 contrôles de l'annexe A que vous pouvez démontrer dans Microsoft 365.",
+    "EU AI-verordening": "Règlement européen sur l'IA",
+    "AI-geletterdheid, transparantie en verplichtingen voor wie AI-systemen gebruikt.": "Maîtrise de l'IA, transparence et obligations pour les utilisateurs de systèmes d'IA.",
+    "Onderwijs": "Enseignement",
+    "Voor scholen ook getoetst aan IBP (Nederland) en GRIP (Vlaanderen).": "Pour les écoles, également évalué selon IBP (Pays-Bas) et GRIP (Flandre).",
+    "Licenties": "Licences",
+    "Afgestemd op": "Adapté à",
+    "uw licenties": "vos licences",
+    "Het assessment herkent of u Business Premium, E3 of E5 hebt. Een maatregel die uw licentie niet toelaat, telt niet als fout: u ziet hem apart, met de licentie die hij vereist.": "L'évaluation reconnaît si vous avez Business Premium, E3 ou E5. Une mesure que votre licence ne permet pas ne compte pas comme une erreur : vous la voyez à part, avec la licence qu'elle requiert.",
+    "U ziet meteen wat u met uw huidige licenties al kunt verbeteren.": "Vous voyez tout de suite ce que vous pouvez déjà améliorer avec vos licences actuelles.",
+    "En welke maatregelen een upgrade of add-on vragen, zoals Entra ID P2 voor Privileged Identity Management.": "Et quelles mesures demandent une mise à niveau ou un module complémentaire, comme Entra ID P2 pour Privileged Identity Management.",
+    "Elke controle heeft concrete stappen om het op te lossen.": "Chaque contrôle comporte des étapes concrètes pour y remédier.",
+    "Identiteit & toegang · gemiddelde ernst": "Identité et accès · gravité moyenne",
+    "Status": "Statut",
+    "Licentie": "Licence",
+    "Vereist Entra ID P2: Microsoft 365 E5, of de add-on Entra ID P2 of E5 Security. Met Business Premium telt deze maatregel niet mee in uw score.": "Requiert Entra ID P2 : Microsoft 365 E5, ou le module Entra ID P2 ou E5 Security. Avec Business Premium, cette mesure ne compte pas dans votre score.",
+    "Werkwijze": "Méthode",
+    "Van aanvraag tot rapport.": "De la demande au rapport.",
+    "U hoeft niets te installeren op uw toestellen. Een beheerder keurt de app eenmalig goed.": "Rien à installer sur vos appareils. Un administrateur approuve l'application une seule fois.",
+    "Toegang": "Accès",
+    "Na een kort gesprek maken we uw account aan, met de formule die bij u past.": "Après un bref échange, nous créons votre compte avec la formule qui vous convient.",
+    "Koppelen": "Connexion",
+    "Een globale beheerder rolt de app met leesrechten uit naar uw tenant.": "Un administrateur général déploie l'application en lecture seule dans votre tenant.",
+    "Assessment": "Évaluation",
+    "Het portaal leest uw configuratie en scoort elke controle. U bevestigt de organisatorische maatregelen.": "Le portail lit votre configuration et note chaque contrôle. Vous confirmez les mesures organisationnelles.",
+    "Rapport": "Rapport",
+    "Veilig en transparant": "Sûr et transparent",
+    "Enkel leesrechten. U houdt de controle.": "Lecture seule. Vous gardez le contrôle.",
+    "Alleen-lezen": "Lecture seule",
+    "De app leest instellingen en lijsten. Ze wijzigt niets in uw tenant.": "L'application lit des paramètres et des listes. Elle ne modifie rien dans votre tenant.",
+    "Geen inhoud": "Aucun contenu",
+    "Het portaal leest niet de inhoud van e-mails, bestanden, chats of agenda's.": "Le portail ne lit pas le contenu des e-mails, fichiers, conversations ou agendas.",
+    "Met één klik weg": "Supprimé en un clic",
+    "De knop App verwijderen trekt de toegang in en wist alle assessmentgegevens van die tenant.": "Le bouton Supprimer l'app révoque l'accès et efface toutes les données d'évaluation de ce tenant.",
+    "Lees precies welke rechten de app vraagt in": "Lisez exactement quelles autorisations l'application demande dans",
+    "en hoe we met gegevens omgaan in de": "et comment nous traitons les données dans la",
+    "privacyverklaring": "politique de confidentialité",
+    "Klaar om te weten waar u staat?": "Prêt à savoir où vous en êtes ?",
+    "Bekijk eerst de demo met een voorbeeldorganisatie, of vraag meteen toegang aan. Formules en prijzen vindt u op de startpagina.": "Découvrez d'abord la démo avec une organisation fictive, ou demandez l'accès tout de suite. Les formules et les prix se trouvent sur la page d'accueil.",
+    "Bekijk de prijzen": "Voir les prix",
     "Prijzen": "Tarifs",
     "Kies de formule die past.": "Choisissez la formule qui vous convient.",
     "Elke formule bevat alle controles en kaders. U betaalt per factuur; er is geen automatische betaling.": "Chaque formule comprend tous les contrôles et référentiels. Vous payez sur facture ; il n'y a pas de paiement automatique.",
@@ -129,6 +199,76 @@ const translations = {
     "Microsoft 365 · Azure · On-premise": "Microsoft 365 · Azure · Sur site"
   },
   en: {
+    "Google-assessment": "Google assessment",
+    "Meer info": "More info",
+    "Weet waar uw": "Know where your",
+    "staat.": "stands.",
+    "Een automatische doorlichting van uw tenant tegen NIS2, ISO/IEC 27001 en de EU AI-verordening, afgestemd op uw licenties en met concrete stappen om elk tekort op te lossen.": "An automatic review of your tenant against NIS2, ISO/IEC 27001 and the EU AI Act, matched to your licences, with concrete steps to fix every gap.",
+    "controles": "checks",
+    "categorieën": "categories",
+    "kaders: NIS2, ISO/IEC 27001 en de AI-verordening": "frameworks: NIS2, ISO/IEC 27001 and the AI Act",
+    "Wat het controleert": "What it checks",
+    "56 controles in 9 categorieën.": "56 checks in 9 categories.",
+    "43 controles leest het portaal automatisch uit uw tenant. De 13 organisatorische maatregelen, zoals beleid en back-up, bevestigt u zelf in het portaal.": "The portal reads 43 checks automatically from your tenant. You confirm the 13 organisational measures, such as policy and backup, yourself in the portal.",
+    "MFA, Conditional Access, beheerdersrollen, legacy-authenticatie, gasttoegang en inactieve accounts.": "MFA, Conditional Access, admin roles, legacy authentication, guest access and inactive accounts.",
+    "Toestellen & endpoints": "Devices & endpoints",
+    "Compliancepolicies in Intune, schijfversleuteling en toegang enkel vanaf beheerde toestellen.": "Intune compliance policies, disk encryption and access from managed devices only.",
+    "Bescherming tegen dreigingen": "Threat protection",
+    "Secure Score, openstaande waarschuwingen, phishingsimulaties, Safe Links en Safe Attachments.": "Secure Score, open alerts, phishing simulations, Safe Links and Safe Attachments.",
+    "SPF, DKIM en DMARC, extern doorsturen, mailboxauditing en SMTP AUTH.": "SPF, DKIM and DMARC, external forwarding, mailbox auditing and SMTP AUTH.",
+    "Samenwerken & delen": "Collaboration & sharing",
+    "Extern delen in SharePoint en OneDrive, toegestane domeinen en synchronisatie.": "External sharing in SharePoint and OneDrive, allowed domains and sync.",
+    "Gegevensbescherming": "Data protection",
+    "Gevoeligheidslabels, bewaarbeleid en Data Loss Prevention.": "Sensitivity labels, retention policies and Data Loss Prevention.",
+    "Auditlog, aanmeldlogs, bewaartermijnen en opvolging in een SIEM.": "Audit log, sign-in logs, retention periods and follow-up in a SIEM.",
+    "Governance & weerbaarheid": "Governance & resilience",
+    "Beleid, risicoanalyse, incidentrespons, back-up, continuïteit, leveranciers en bewustzijn.": "Policy, risk analysis, incident response, backup, continuity, suppliers and awareness.",
+    "Copilot-uitrol, toegang van AI-apps tot bedrijfsgegevens, schaduw-AI, AI-geletterdheid en beleid.": "Copilot rollout, AI apps' access to company data, shadow AI, AI literacy and policy.",
+    "Kaders": "Frameworks",
+    "Elke controle gekoppeld aan de regels.": "Every check linked to the rules.",
+    "Het rapport toont per kader welke maatregelen in orde zijn en welke niet, met verwijzing naar het artikel of de control.": "The report shows per framework which measures are in order and which are not, with a reference to the article or control.",
+    "NIS2-richtlijn": "NIS2 Directive",
+    "De tien maatregelen voor cyberrisicobeheer en de meldplicht bij incidenten.": "The ten cyber risk management measures and the incident reporting obligation.",
+    "33 controls uit Annex A die u in Microsoft 365 kunt aantonen.": "33 Annex A controls you can demonstrate in Microsoft 365.",
+    "EU AI-verordening": "EU AI Act",
+    "AI-geletterdheid, transparantie en verplichtingen voor wie AI-systemen gebruikt.": "AI literacy, transparency and obligations for those who use AI systems.",
+    "Onderwijs": "Education",
+    "Voor scholen ook getoetst aan IBP (Nederland) en GRIP (Vlaanderen).": "For schools, also assessed against IBP (Netherlands) and GRIP (Flanders).",
+    "Licenties": "Licences",
+    "Afgestemd op": "Matched to",
+    "uw licenties": "your licences",
+    "Het assessment herkent of u Business Premium, E3 of E5 hebt. Een maatregel die uw licentie niet toelaat, telt niet als fout: u ziet hem apart, met de licentie die hij vereist.": "The assessment recognises whether you have Business Premium, E3 or E5. A measure your licence doesn't allow doesn't count as a failure: you see it separately, with the licence it requires.",
+    "U ziet meteen wat u met uw huidige licenties al kunt verbeteren.": "You see right away what you can already improve with your current licences.",
+    "En welke maatregelen een upgrade of add-on vragen, zoals Entra ID P2 voor Privileged Identity Management.": "And which measures need an upgrade or add-on, such as Entra ID P2 for Privileged Identity Management.",
+    "Elke controle heeft concrete stappen om het op te lossen.": "Every check comes with concrete steps to fix it.",
+    "Identiteit & toegang · gemiddelde ernst": "Identity & access · medium severity",
+    "Status": "Status",
+    "Licentie": "Licence",
+    "Vereist Entra ID P2: Microsoft 365 E5, of de add-on Entra ID P2 of E5 Security. Met Business Premium telt deze maatregel niet mee in uw score.": "Requires Entra ID P2: Microsoft 365 E5, or the Entra ID P2 or E5 Security add-on. With Business Premium, this measure doesn't count towards your score.",
+    "Werkwijze": "How it works",
+    "Van aanvraag tot rapport.": "From request to report.",
+    "U hoeft niets te installeren op uw toestellen. Een beheerder keurt de app eenmalig goed.": "Nothing to install on your devices. An administrator approves the app once.",
+    "Toegang": "Access",
+    "Na een kort gesprek maken we uw account aan, met de formule die bij u past.": "After a short conversation, we create your account with the plan that suits you.",
+    "Koppelen": "Connect",
+    "Een globale beheerder rolt de app met leesrechten uit naar uw tenant.": "A Global Administrator deploys the read-only app to your tenant.",
+    "Assessment": "Assessment",
+    "Het portaal leest uw configuratie en scoort elke controle. U bevestigt de organisatorische maatregelen.": "The portal reads your configuration and scores every check. You confirm the organisational measures.",
+    "Rapport": "Report",
+    "Veilig en transparant": "Safe and transparent",
+    "Enkel leesrechten. U houdt de controle.": "Read-only. You stay in control.",
+    "Alleen-lezen": "Read-only",
+    "De app leest instellingen en lijsten. Ze wijzigt niets in uw tenant.": "The app reads settings and lists. It changes nothing in your tenant.",
+    "Geen inhoud": "No content",
+    "Het portaal leest niet de inhoud van e-mails, bestanden, chats of agenda's.": "The portal doesn't read the content of e-mails, files, chats or calendars.",
+    "Met één klik weg": "Gone in one click",
+    "De knop App verwijderen trekt de toegang in en wist alle assessmentgegevens van die tenant.": "The Remove app button revokes access and erases all assessment data of that tenant.",
+    "Lees precies welke rechten de app vraagt in": "Read exactly which permissions the app asks for in",
+    "en hoe we met gegevens omgaan in de": "and how we handle data in the",
+    "privacyverklaring": "privacy policy",
+    "Klaar om te weten waar u staat?": "Ready to know where you stand?",
+    "Bekijk eerst de demo met een voorbeeldorganisatie, of vraag meteen toegang aan. Formules en prijzen vindt u op de startpagina.": "Explore the demo with a sample organisation first, or request access right away. Plans and prices are on the home page.",
+    "Bekijk de prijzen": "See the prices",
     "Prijzen": "Pricing",
     "Kies de formule die past.": "Choose the plan that fits.",
     "Elke formule bevat alle controles en kaders. U betaalt per factuur; er is geen automatische betaling.": "Every plan includes all checks and frameworks. You pay by invoice; there is no automatic payment.",
@@ -258,18 +398,28 @@ const translations = {
 };
 
 const titleTranslations = {
-  fr: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative" },
-  en: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative" }
+  fr: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative",
+        "M365-assessment · CloudVision": "Évaluation M365 · CloudVision" },
+  en: { "CloudVision": "CloudVision", "CloudVision | Alternative": "CloudVision | Alternative",
+        "M365-assessment · CloudVision": "M365 assessment · CloudVision" }
 };
 
+// Keyed by the page's Dutch description, so every page translates its own
 const descriptionTranslations = {
-  fr: "CloudVision : consultant indépendant pour Microsoft 365, Azure et les environnements sur site. Plus de 14 ans d’expérience.",
-  en: "CloudVision: freelance consultant for Microsoft 365, Azure, and on-premises environments. 14+ years of experience."
+  fr: {
+    "Het M365-assessment van CloudVision toetst uw Microsoft 365-tenant aan NIS2, ISO/IEC 27001 en de EU AI-verordening, afgestemd op uw licenties.": "L'évaluation M365 de CloudVision évalue votre tenant Microsoft 365 selon NIS2, l'ISO/IEC 27001 et le règlement européen sur l'IA, en tenant compte de vos licences.",
+    "CloudVision: freelance consultant voor Microsoft 365, Azure en on-premise omgevingen. 14+ jaar ervaring.": "CloudVision : consultant indépendant pour Microsoft 365, Azure et les environnements sur site. Plus de 14 ans d’expérience."
+  },
+  en: {
+    "Het M365-assessment van CloudVision toetst uw Microsoft 365-tenant aan NIS2, ISO/IEC 27001 en de EU AI-verordening, afgestemd op uw licenties.": "CloudVision's M365 assessment checks your Microsoft 365 tenant against NIS2, ISO/IEC 27001 and the EU AI Act, matched to your licences.",
+    "CloudVision: freelance consultant voor Microsoft 365, Azure en on-premise omgevingen. 14+ jaar ervaring.": "CloudVision: freelance consultant for Microsoft 365, Azure, and on-premises environments. 14+ years of experience."
+  }
 };
 
 const attributeTranslations = {
   fr: {
     "Voorbeeld van een assessmentrapport": "Exemple de rapport d’évaluation",
+    "Voorbeeld van een licentievereiste": "Exemple d’exigence de licence",
     "Taal": "Langue",
     "Certificaties": "Certifications",
     "Schema van een hybride omgeving: on-premise Active Directory gesynchroniseerd via Entra Connect naar Microsoft 365 en Azure": "Schéma d’un environnement hybride : Active Directory sur site synchronisé via Entra Connect avec Microsoft 365 et Azure",
@@ -277,6 +427,7 @@ const attributeTranslations = {
   },
   en: {
     "Voorbeeld van een assessmentrapport": "Sample assessment report",
+    "Voorbeeld van een licentievereiste": "Sample licence requirement",
     "Taal": "Language",
     "Certificaties": "Certifications",
     "Schema van een hybride omgeving: on-premise Active Directory gesynchroniseerd via Entra Connect naar Microsoft 365 en Azure": "Diagram of a hybrid environment: on-premises Active Directory synced through Entra Connect to Microsoft 365 and Azure",
@@ -311,7 +462,7 @@ function setLanguage(language) {
 
   document.documentElement.lang = language;
   document.title = titleTranslations[language]?.[originalTitle] || originalTitle;
-  description.content = language === "nl" ? originalDescription : descriptionTranslations[language];
+  description.content = descriptionTranslations[language]?.[originalDescription] || originalDescription;
   languageSelect.value = language;
 
   originalAriaLabels.forEach((original, element) => {
@@ -321,7 +472,11 @@ function setLanguage(language) {
 
 languageSelect.addEventListener("change", () => setLanguage(languageSelect.value));
 
-document.getElementById("copy").addEventListener("click", async (event) => {
+// Keep the language chosen on the page the visitor came from (links carry ?lang=, see app-links.js)
+const requestedLanguage = new URLSearchParams(location.search).get("lang");
+if (requestedLanguage === "fr" || requestedLanguage === "en") setLanguage(requestedLanguage);
+
+document.getElementById("copy")?.addEventListener("click", async (event) => {
   const button = event.currentTarget;
   const email = document.getElementById("mail");
   const messages = {
